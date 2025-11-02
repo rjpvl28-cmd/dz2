@@ -3,16 +3,20 @@
     padding: 0;
     box-sizing: border-box;
 }
+.header-head {
+    border: 1920px 74px;
+}
 
 .header-nav {
     display: flex;
-    justify-content: end;
-}
+    }
 .header-nabla {
+    padding: 25px 1532px 25px 312px;
     display: flex;
     color: 040062;
 }
 .header-list {
+    padding: 25px 1183px 25px 438px;
     list-style: none;
     display: flex;
     gap: 20px;
@@ -27,5 +31,5 @@
 }
 
 .header-right {
-
+    justify-content: end;
 }
