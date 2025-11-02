@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: end;
+}
+.header-nabla {
+    display: flex;
+    color: 040062;
+}
+.header-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.header-up {
+    color: 040062; 
+    text-decoration: none;
+    display: flex;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-right {
+
+}
