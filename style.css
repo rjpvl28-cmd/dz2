@@ -3,20 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
-.header-head {
-    border: 1920px 74px;
-}
 
 .header-nav {
     display: flex;
     }
 .header-nabla {
-    padding: 25px 1532px 25px 312px;
+    padding: 25px 50px 26px 312px;
     display: flex;
     color: 040062;
 }
 .header-list {
-    padding: 25px 1183px 25px 438px;
+    padding: 28px 708px 28px 0px;
     list-style: none;
     display: flex;
     gap: 20px;
@@ -26,10 +23,11 @@
     color: 040062; 
     text-decoration: none;
     display: flex;
-    font-size: medium;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-family: 'Ubuntu', Arial, sans-serif;
 }
 
 .header-right {
     justify-content: end;
+    padding: 18px 312px 18px 0px;
 }
