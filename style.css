@@ -25,9 +25,30 @@
     display: flex;
     font-size: 16px;
     font-family: 'Ubuntu', Arial, sans-serif;
+    
 }
 
-.header-right {
+.header-button {
+    width: 163px; /* размеры кнопки */
+    height: 38px;
     justify-content: end;
-    padding: 18px 312px 18px 0px;
+    background-color: #0013FF;
+    font-family: 'Ubuntu', Arial, sans-serif;
+    color: white; 
+    padding: 10px 20px; /* отступы текста */
+    border: none; /* убрать классический стиль кнопки */
+    border-radius: 20px; /* скругление краёв кнопки */
+    cursor: pointer;
+    font-size: 16px;
+  */  margin;: 18px 312px 18px 0px */
+    
+}
+
+/*.header-txt {
+    display: flex;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Ubuntu', Arial, sans-serif;
+    color: white;
+    flex-wrap: nowrap;
 }
