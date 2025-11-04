@@ -40,9 +40,35 @@
     border-radius: 20px; /* скругление краёв кнопки */
     cursor: pointer;
     font-size: 16px;
-    
-    
 }
+
 .header-but {
     padding: 18px 312px 18px 0px;
 }
+
+.header-nabla1 {
+    margin: 0px 312px 0px 312px;
+    display: flex;
+    color: 040062;
+    background-color: #C7E3E9
+}
+
+.header-list1 { 
+    list-style: none;
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+    
+}
+
+.header-list2 {
+    padding: 0px 0px 0px 0px;
+    list-style: none;
+    display: flex;
+}
+
+.header-hand {
+    box-sizing: 647*1296;
+    display: flex;
+
+}
+
