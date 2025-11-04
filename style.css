@@ -46,9 +46,11 @@
     padding: 18px 312px 18px 0px;
 }
 
+.header-li {
+    padding: 0px;
+}
+
 .header-nabla1 {
-    margin: 0px 312px 0px 312px;
-    display: flex;
     color: 040062;
     background-color: #C7E3E9
 }
@@ -63,12 +65,10 @@
 .header-list2 {
     padding: 0px 0px 0px 0px;
     list-style: none;
-    display: flex;
+    display: blockflex;
 }
 
 .header-hand {
-    box-sizing: 647*1296;
-    display: flex;
-
+    padding: 0px 314px 0px 314px;
 }
 
