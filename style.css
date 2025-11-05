@@ -76,11 +76,32 @@
 }
 
 .header-list2 {
-    padding: 0px 0px 0px 0px;
+    margin-inline: calc(20px);
+    justify-content: center;
+    align-items: center;
     list-style: none;
-    display: blockflex;
+    display: flex;
 }
 
+.header-img {
+    justify-content: center;
+    list-style: none;
+    display: inline-flex;
+}
+
+.header-img1 {
+    padding: 0px; 34px;
+    justify-content: left;
+    list-style: none;
+    display: flex;
+}
+
+.header-img3 {
+    padding: 0px; 34px;
+    justify-content: right;
+    list-style: none;
+    display: flex;
+}
 .header-hand {
     padding: 0px 314px 0px 314px;
 }
