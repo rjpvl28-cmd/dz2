@@ -4,9 +4,53 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: Ubuntu;
+    src: url('fonts/Ubuntu-LightItalic.ttf');
+    font-weight: 300;
+}
+@font-face {
+    font-family: Ubuntu;
+    src: url('fonts/Ubuntu-Light.ttf');
+    font-weight: 300;
+}
+@font-face {
+    font-family: Ubuntu;
+    src: url('fonts/Ubuntu-Regular.ttf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: Ubuntu;
+    src: url('fonts/Ubuntu-Italic.ttf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: Ubuntu;
+    src: url('fonts/Ubuntu-Medium.ttf');
+    font-weight: 500;
+}
+@font-face {
+    font-family: Ubuntu;
+    src: url('fonts/Ubuntu-MediumItalic.ttf');
+    font-weight: 500;
+}
+@font-face {
+    font-family: Ubuntu;
+    src: url('fonts/Ubuntu-Bold.ttf');
+    font-weight: 700;
+}
+@font-face {
+    font-family: Ubuntu;
+    src: url('fonts/Ubuntu-BoldItalic.ttf');
+    font-weight: 700;
+}
+
+/* .header */
+
 .header-nav {
     display: flex;
     }
+
 .header-nabla {
     padding: 25px 50px 26px 312px;
     display: flex;
@@ -24,8 +68,7 @@
     text-decoration: none;
     display: flex;
     font-size: 16px;
-    font-family: 'Ubuntu', Arial, sans-serif;
-    
+    font-family: 'Ubuntu', Arial, sans-serif; 
 }
 
 .header-button {
@@ -48,46 +91,48 @@
     padding: 18px 312px 18px 0px;
 }
 
-.section-txt {
+/* .header */
+
+/* .first */
+
+.first__container {
+    list-style: none;
+    color: 040062;
+    background-color: #C7E3E9;  
+}
+
+.first__txt {
     padding: 0px;
     list-style: none;
     text-align: center;
     font-size: 60px;
 }
 
-.section-txt2 {
+.First__txt2 {
     font-size: 80px;
 }
 
-.section-txt3 {
+.first__txt3 {
     font-size: 110px;
 }
 
-.header-nabla1 {
+.first__img {
+    justify-content: center;
     list-style: none;
-    color: 040062;
-    background-color: #C7E3E9
+    display: inline-flex;
+    justify-content: space-between;
 }
 
-.header-list1 {
-    padding: 0px 0px 0px 0px;
-}
-
-.header-list2 {
+.first__list2 {
     margin-inline: calc(20px);
     justify-content: center;
     align-items: center;
     list-style: none;
     display: flex;
+    gap: 34px;
 }
 
-.header-img {
-    justify-content: center;
-    list-style: none;
-    display: inline-flex;
-}
-
-.header-img1 {
+.first__img2 {
     padding: 0px; 34px;
     justify-content: left;
     list-style: none;
@@ -100,7 +145,7 @@
     list-style: none;
     display: flex;
 }
-.header-hand {
+.first {
     padding: 0px 314px 0px 314px;
 }
 
