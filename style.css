@@ -4,11 +4,7 @@
     box-sizing: border-box;
 }
 
-@font-face {
-    font-family: Ubuntu;
-    src: url('fonts/Ubuntu-LightItalic.ttf');
-    font-weight: 300;
-}
+
 @font-face {
     font-family: Ubuntu;
     src: url('fonts/Ubuntu-Light.ttf');
@@ -21,43 +17,46 @@
 }
 @font-face {
     font-family: Ubuntu;
-    src: url('fonts/Ubuntu-Italic.ttf');
-    font-weight: 400;
-}
-@font-face {
-    font-family: Ubuntu;
     src: url('fonts/Ubuntu-Medium.ttf');
     font-weight: 500;
 }
-@font-face {
-    font-family: Ubuntu;
-    src: url('fonts/Ubuntu-MediumItalic.ttf');
-    font-weight: 500;
-}
+
 @font-face {
     font-family: Ubuntu;
     src: url('fonts/Ubuntu-Bold.ttf');
     font-weight: 700;
 }
-@font-face {
-    font-family: Ubuntu;
-    src: url('fonts/Ubuntu-BoldItalic.ttf');
-    font-weight: 700;
-}
+
 
 /* .header */
 
+ .header {
+    padding: 25px 312px 25px 312px;  
+/*    display: flex;
+    justify-content: center;
+    
+    box-sizing: border-box; */
+} 
+
 .header-nav {
+
     display: flex;
+
     }
 
 .header-nabla {
-    padding: 25px 50px 26px 312px;
+ /*   padding: 18px 312px; */
     display: flex;
-    color: 040062;
+    justify-content: space-between;
+    width: calc(100% - 20px - 354px);
+    max-width: 856px;
+
+
+
+
 }
 .header-list {
-    padding: 28px 708px 28px 0px;
+  /*  padding: 28px 708px 28px 0px; */
     list-style: none;
     display: flex;
     gap: 20px;
@@ -88,7 +87,7 @@
 }
 
 .header-but {
-    padding: 18px 312px 18px 0px;
+ /* padding: 18px 312px 18px 0px; */
 }
 
 /* .header */
@@ -149,3 +148,43 @@
     padding: 0px 314px 0px 314px;
 }
 
+/* .first */
+/* .content */
+
+.justify-content__block {
+    width: calc(100% - 60px + 60px);
+    max-width: 856px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 218px;
+}
+.justify-content__block__1 {
+    background-color: #FEF1EF;
+    display: flex;
+    justify-content: center;
+    width: 648px;
+    max-width: 648px;
+    padding: 70px 207px;
+    gap: 306px;
+}
+
+.justify-content__img {
+    border-radius: 34px;
+}
+
+.justify-content__title {
+    line-height: 120%;
+    font-size: 48px;
+    font-family: 'Abril Fatface', serif;
+    color: #040062;
+    max-width: 449;
+}
+
+.justify-content__text {
+    line-height: 120%;
+    font-size: 18px;
+    font-family: 'Ubuntu', Arial, sans-serif;
+    color: #6D758D;
+    max-width: 488;
+}
