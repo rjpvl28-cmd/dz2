@@ -3,33 +3,329 @@
     padding: 0;
     box-sizing: border-box;
 }
-.header-head {
-    border: 1920px 74px;
+
+
+@font-face {
+    font-family: Ubuntu;
+    src: url('fonts/Ubuntu-Light.ttf');
+    font-weight: 300;
+}
+@font-face {
+    font-family: Ubuntu;
+    src: url('fonts/Ubuntu-Regular.ttf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: Ubuntu;
+    src: url('fonts/Ubuntu-Medium.ttf');
+    font-weight: 500;
 }
 
-.header-nav {
-    display: flex;
-    }
-.header-nabla {
-    padding: 25px 1532px 25px 312px;
-    display: flex;
-    color: 040062;
+@font-face {
+    font-family: Ubuntu;
+    src: url('fonts/Ubuntu-Bold.ttf');
+    font-weight: 700;
 }
-.header-list {
-    padding: 25px 1183px 25px 438px;
+
+
+/* .header */
+
+ .header {
+    padding: 25px 312px 25px 312px;  
+/*    display: flex;
+    justify-content: center;
+    
+    box-sizing: border-box; */
+} 
+
+.ubuntu-light {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.ubuntu-regular {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ubuntu-medium {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.ubuntu-bold {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.ubuntu-light-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.ubuntu-regular-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.ubuntu-medium-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.ubuntu-bold-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+    font-family: 'Abril Fatface';
+    src: url('/fonts/AbrilFatface-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;   
+}
+
+/* .header */
+
+.header {
+    padding: 18px 312px;
+}
+
+.header__cap {
+    display: flex;
+    justify-items: baseline;
+    justify-content: space-between;
+    gap: 708px;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+
+}
+
+.header__nabla {
+    margin: 7px 0 8px;
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 20px - 354px);
+    max-width: 856px;
+
+
+
+
+}
+.header__list {
+    margin-block: 10px 0px;
+    padding-inline-start: 0%;
     list-style: none;
     display: flex;
     gap: 20px;
 }
 
-.header-up {
-    color: 040062; 
+.header__up {
+    color: #0013FF; 
     text-decoration: none;
     display: flex;
-    font-size: medium;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-family: 'Ubuntu', Arial, sans-serif;
 }
 
-.header-right {
+.header__button {
+    display: inline-block; /* Позволяет задать отступы и другие свойства */
+    text-decoration: none; /* Убирает подчеркивание ссылки */
+    width: 163px; /* размеры кнопки */
+    height: 38px;
     justify-content: end;
+    background-color: #0013FF;
+    font-family: 'Ubuntu', Arial, sans-serif;
+    color: white; 
+    padding: 10px 20px; /* отступы текста */
+    border: none; /* убрать классический стиль кнопки */
+    border-radius: 20px; /* скругление краёв кнопки */
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* header */
+
+/* .first */
+
+.first__header {
+    padding: 0px 314px 0px 314px;
+    margin-bottom: 60px;
+    display: block;
+}
+
+.first__nabla {
+    display: flex;
+    width: 1296px;
+    height: 647px;
+    list-style: none;
+    color: #040062;
+    background-color: #C7E3E9;
+    font-family: 'Abril Fatface', serif;
+    position: relative;
+}
+
+.first__text {
+    position: absolute;
+    top: 80px;
+    left: 318px;
+    bottom: 230px;
+    right: 318px;
+    margin-bottom: 80px;
+    
+}
+
+.first__txt {
+    padding: 0px;
+    text-align: center;
+    font-size: 60px;
+}
+
+.first__txt2 {
+    font-size: 80px;
+}
+
+.first__txt3 {
+    font-size: 110px;
+}
+
+.first__list {
+    margin-inline: calc(20px);
+    display: flex;
+    gap: 34px;
+    margin-top: 80px;
+}
+
+.first__list--img {
+    padding-inline: calc(100% 34px - 34px);
+    list-style: none;
+}
+
+.first__image {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    
+}
+
+.first__img {
+    list-style: none;
+    position: absolute;
+    left: 30px;
+    bottom: 0px;
+}
+
+.first__img3 {
+    list-style: none;
+    display: flex;
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
+}
+
+/* .first */
+
+/* .content */
+
+.content {
+    display: block;
+    margin-bottom: 100px;
+}
+
+.content__block {
+    display: flex;
+    justify-items: auto;
+    margin: 0 314px;
+}
+
+.content__image {
+    display: flex;
+    justify-content: center;
+    border-radius: 36px;
+}
+
+.content__image--left, .content__image--right {
+    display: flex;
+    justify-content: center;
+    padding: 70px 207px;
+}
+
+.content__image--left {
+    background-color: #FEF1EF;
+}
+
+.content__image--right {
+    background-color: #C7E3E9;
+}
+
+.content__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+}
+
+.content__txt {
+    font-size: 48px;
+    color: #040062;
+    font-family: 'Abril Fatface', serif;
+    padding-left: 100px;
+    justify-content: start;
+}
+
+.content__txt2 {
+    font-size: 18px;
+    padding-left: 100px;
+    color: #6D758D;
+    justify-content: start;
+}
+
+.justify-content__block {
+    width: calc(100% - 60px + 60px);
+    max-width: 856px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 218px;
+}
+.justify-content__block__1 {
+    background-color: #FEF1EF;
+    display: flex;
+    justify-content: center;
+    width: 648px;
+    max-width: 648px;
+    padding: 70px 207px;
+    gap: 306px;
+}
+
+.justify-content__img {
+    border-radius: 34px;
+}
+
+.justify-content__title {
+    line-height: 120%;
+    font-size: 48px;
+    font-family: 'Abril Fatface', serif;
+    color: #040062;
+    max-width: 449;
+}
+
+.justify-content__text {
+    line-height: 120%;
+    font-size: 18px;
+    font-family: 'Ubuntu', Arial, sans-serif;
+    color: #6D758D;
+    max-width: 488;
 }
