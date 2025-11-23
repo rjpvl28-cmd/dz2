@@ -30,62 +30,6 @@
 
 /* .header */
 
- .header {
-    padding: 25px 312px 25px 312px;  
-/*    display: flex;
-    justify-content: center;
-    
-    box-sizing: border-box; */
-} 
-
-.ubuntu-light {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.ubuntu-regular {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.ubuntu-medium {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.ubuntu-bold {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.ubuntu-light-italic {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.ubuntu-regular-italic {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.ubuntu-medium-italic {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 500;
-  font-style: italic;
-}
-
-.ubuntu-bold-italic {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
 @font-face {
     font-family: 'Abril Fatface';
     src: url('/fonts/AbrilFatface-Regular.ttf');
@@ -99,35 +43,30 @@
     padding: 18px 312px;
 }
 
-.header__cap {
-    display: flex;
-    justify-items: baseline;
-    justify-content: space-between;
-    gap: 708px;
-}
-
 .header__nav {
     display: flex;
     justify-content: space-between;
+    max-width: 1296px;
     gap: 50px;
+}
 
+.header__cap {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
 }
 
 .header__nabla {
-    margin: 7px 0 8px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     width: calc(100% - 20px - 354px);
     max-width: 856px;
+    gap: 50px;
 }
 
-.header__cap--all {
-    display: flex;
-    gap: 708px;
-}
 
 .header__list {
-    margin-block: 10px 0px;
     padding-inline-start: 0%;
     list-style: none;
     display: flex;
@@ -145,8 +84,8 @@
 .header__button {
     display: inline-block; /* Позволяет задать отступы и другие свойства */
     text-decoration: none; /* Убирает подчеркивание ссылки */
-    width: 163px; /* размеры кнопки */
-    height: 38px;
+    min-width: 163px; /* размеры кнопки */
+    min-height: 38px;
     justify-content: end;
     background-color: #0013FF;
     font-family: 'Ubuntu', Arial, sans-serif;
@@ -162,31 +101,31 @@
 
 /* .first */
 
-.first__header {
+.first {
     padding: 0px 314px 0px 314px;
     margin-bottom: 60px;
-    display: block;
 }
 
 .first__nabla {
+    max-width: 1296px;
+    margin: 0 auto;
     display: flex;
-    width: 1296px;
-    height: 647px;
+    justify-content: center;
+    flex-direction: column;
+/*    width: 1296px;
+    height: 647px; */
     list-style: none;
     color: #040062;
     background-color: #C7E3E9;
     font-family: 'Abril Fatface', serif;
     position: relative;
+    gap: 80px;
 }
 
 .first__text {
-    position: absolute;
-    top: 80px;
-    left: 318px;
-    bottom: 230px;
-    right: 318px;
-    margin-bottom: 80px;
-    
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
 }
 
 .first__txt {
@@ -203,29 +142,39 @@
     font-size: 110px;
 }
 
+.first__list {
+    display: flex;
+    justify-content: center;
+    gap: 34px;
+    padding-bottom: 90px;
+}
+
 .first__list--image {
     width: 385px;
-    position: absolute; bottom: -95px;
     display: flex;
     justify-content: space-between;
     gap: 34px;
     padding-left: 30px;
 }
 
-.first__list {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 90px;
-    padding-top: 235px;
-    gap: 34px;
-}
+
 
 .first__img {
     padding-top: 29px;
 }
 
+.first__img--left {
+    position: absolute;
+    left: 30px;
+    bottom: 0;
+
+}
+
 .first__img--right {
-    padding-top: 44px;
+    position: absolute;
+    right: 30px;
+    bottom: 0;
+    
 }
 
 /* .first */
@@ -285,40 +234,67 @@
     justify-content: start;
 }
 
-.justify-content__block {
-    width: calc(100% - 60px + 60px);
-    max-width: 856px;
-    margin: 0 auto;
+/* content */
+
+/* footer */
+
+.footer {
+    padding: 0px 314px 0px 314px;
+
+}
+
+.footer__footer {
     display: flex;
     justify-content: space-between;
-    gap: 218px;
+    max-width: 1296px;
+    padding-top: 80px;
 }
-.justify-content__block__1 {
-    background-color: #FEF1EF;
+
+.footer__list {
     display: flex;
-    justify-content: center;
-    width: 648px;
-    max-width: 648px;
-    padding: 70px 207px;
-    gap: 306px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 180px;
+
 }
 
-.justify-content__img {
-    border-radius: 34px;
+.footer__info {
+    padding-inline-start: 0%;
+    list-style: none;
+    display: flex;
+    justify-content: baseline;
+    gap: 120px;
 }
 
-.justify-content__title {
-    line-height: 120%;
-    font-size: 48px;
-    font-family: 'Abril Fatface', serif;
-    color: #040062;
-    max-width: 449;
+.footer__nav {
+    padding-inline-start: 0%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.justify-content__text {
-    line-height: 120%;
-    font-size: 18px;
+.footer__end {
+    color: #040062; 
+    text-decoration: none;
+    display: flex;
+    font-size: 22px;
     font-family: 'Ubuntu', Arial, sans-serif;
-    color: #6D758D;
-    max-width: 488;
+}
+
+.footer__end--small {
+    color: #6D758D; 
+    text-decoration: none;
+    display: flex;
+    font-size: 16px;
+}
+
+.footer__social {
+    display: flex;
+    justify-items: baseline;
+    gap: 30px;
+}
+
+.footer__end--right {
+    gap: 25px;
 }
